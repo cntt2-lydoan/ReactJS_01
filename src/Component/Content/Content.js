@@ -4,6 +4,9 @@ class Content extends Component {
 
     constructor(props) {
         super(props);
+        this.state ={
+          trangthai:0
+        }
     }
     thongbao = () => {alert('Cach xu ly tuong trong react js');}
     thongbao2 = () => {
@@ -12,6 +15,30 @@ class Content extends Component {
     thongbao3 = (x) => {alert(x);}
     thongbao4 = (y) => {alert(y);}
 
+    renderButton=() =>(
+    <div className="row">
+      <div>
+        <div className="btn btn-info" onClick={this.thongbao}>Edit</div>
+        <div className="btn btn-warning" onClick={this.thongbao2}>Remove</div>
+      </div>
+    </div>
+      )
+    renderForm=() =>(
+      <div classname="row">
+      <div className="form-group">
+        <input type="text" name="ten" className="form-control" />
+        <div className="btn btn-block btn-denger">Save</div>
+      </div>
+    </div>
+    )
+    displayCheck = () =>{
+      if(this.state.trangthai===0){
+        return this.renderButton();
+      }
+      else{
+        return this.renderForm();
+      }
+    }
     render() {
         return (
             <section>
@@ -28,15 +55,11 @@ class Content extends Component {
                     <p>
                         {this.props.trichdan}
                     </p>
-                    <div className="row">
-                        <div>
-                          <div className="btn btn-info" onClick={this.thongbao}>Edit</div>
-                          <div className="btn btn-warning" onClick={this.thongbao2}>Remove</div>
-                          <div className="btn btn-warning" onClick={()=>this.thongbao3("hahahaha")}>TB3</div>
-                          <div className="btn btn-warning" onClick={this.thongbao4.bind(this,"kkkk")}>TB4</div>
-                        </div>
-                      </div>
-                  </div>  
+                    { this.displayCheck()}
+  
+
+     
+</div>  
                 </div>
               </div>
             </div>
