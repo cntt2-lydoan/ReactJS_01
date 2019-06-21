@@ -5,7 +5,12 @@ class Content extends Component {
     constructor(props) {
         super(props);
     }
-    
+    thongbao = () => {alert('Cach xu ly tuong trong react js');}
+    thongbao2 = () => {
+      alert('Thong bao so 2')
+    }
+    thongbao3 = (x) => {alert(x);}
+    thongbao4 = (y) => {alert(y);}
 
     render() {
         return (
@@ -23,7 +28,15 @@ class Content extends Component {
                     <p>
                         {this.props.trichdan}
                     </p>
-                  </div>
+                    <div className="row">
+                        <div>
+                          <div className="btn btn-info" onClick={this.thongbao}>Edit</div>
+                          <div className="btn btn-warning" onClick={this.thongbao2}>Remove</div>
+                          <div className="btn btn-warning" onClick={()=>this.thongbao3("hahahaha")}>TB3</div>
+                          <div className="btn btn-warning" onClick={this.thongbao4.bind(this,"kkkk")}>TB4</div>
+                        </div>
+                      </div>
+                  </div>  
                 </div>
               </div>
             </div>
