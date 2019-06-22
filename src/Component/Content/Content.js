@@ -12,8 +12,6 @@ class Content extends Component {
     thongbao2 = () => {
       alert('Thong bao so 2')
     }
-    thongbao3 = (x) => {alert(x);}
-    thongbao4 = (y) => {alert(y);}
 
     renderButton=() =>(
     <div className="row">
