@@ -35,28 +35,28 @@ class NewsDetail extends Component {
       <div className="col-12">
         <div className="card-deck">
           <div className="card">
-            <a href="chitiet.html"><img className="card-img-top" src="http://placehold.it/500x300" alt="" /></a>
+            <a href="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/500x300" alt="" /></a>
             <div className="card-body">
               <h4 className="card-title">Title</h4>
               <p className="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos nobis rerum sint laborum natus maxime laboriosam reprehenderit quis reiciendis ipsa nam recusandae, assumenda quibusdam officiis ea quam facilis, molestiae fugiat.</p>
             </div>
           </div>
           <div className="card">
-            <a href="chitiet.html"><img className="card-img-top" src="http://placehold.it/500x300" alt=" App NewsDetail" /></a>
+            <a href="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/500x300" alt=" App NewsDetail" /></a>
             <div className="card-body">
               <h4 className="card-title">Title</h4>
               <p className="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos nobis rerum sint laborum natus maxime laboriosam reprehenderit quis reiciendis ipsa nam recusandae, assumenda quibusdam officiis ea quam facilis, molestiae fugiat.</p>
             </div>
           </div>
           <div className="card">
-            <a href="chitiet.html"><img className="card-img-top" src="http://placehold.it/500x300" alt="App NewsDetail" /></a>
+            <a href="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/500x300" alt="App NewsDetail" /></a>
             <div className="card-body">
               <h4 className="card-title">Title</h4>
               <p className="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos nobis rerum sint laborum natus maxime laboriosam reprehenderit quis reiciendis ipsa nam recusandae, assumenda quibusdam officiis ea quam facilis, molestiae fugiat.</p>
             </div>
           </div>
           <div className="card">
-            <a href="chitiet.html"><img className="card-img-top" src="http://placehold.it/500x300" alt="App NewsDetail" /></a>
+            <a href="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/500x300" alt="App NewsDetail" /></a>
             <div className="card-body">
               <h4 className="card-title">Title</h4>
               <p className="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos nobis rerum sint laborum natus maxime laboriosam reprehenderit quis reiciendis ipsa nam recusandae, assumenda quibusdam officiis ea quam facilis, molestiae fugiat.</p>

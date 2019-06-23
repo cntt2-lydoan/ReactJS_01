@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+import NewsItem from './NewsItem';
+import dl from './dulieu.json';
 class News extends Component {
     render() {
+      console.log(dl);
         return (
             <div>
                 <div>
@@ -19,78 +22,10 @@ class News extends Component {
   {/* begin tintuc */}
   <div className="container">
     <div className="row mt-3">
-      <div className="col-4">
-        <div className="card-deck">
-          <div className="card">
-            <a href="chitiet.html"><img className="card-img-top" src="http://placehold.it/800x400" alt="App new"/></a>
-            <div className="card-body">
-              <h4 className="card-title"><a href="chitiet.html">Tin tuc so 1</a></h4>
-              <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aperiam incidunt dolorum blanditiis quidem enim autem, cum consectetur aut animi consequatur ad natus minima suscipit illo in, quo exercitationem dolores!</p>
-            </div>
-          </div>
-        </div>
-        <hr />
-      </div>
-      <div className="col-4">
-        <div className="card-deck">
-          <div className="card">
-            <a href="chitiet.html"><img className="card-img-top" src="http://placehold.it/800x400" alt="App new"/></a>
-            <div className="card-body">
-              <h4 className="card-title"><a href="chitiet.html">Tin tuc so 2</a></h4>
-              <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aperiam incidunt dolorum blanditiis quidem enim autem, cum consectetur aut animi consequatur ad natus minima suscipit illo in, quo exercitationem dolores!</p>
-            </div>
-          </div>
-        </div>
-        <hr />
-      </div>
-      <div className="col-4">
-        <div className="card-deck">
-          <div className="card">
-            <a href="chitiet.html"><img className="card-img-top" src="http://placehold.it/800x400" alt="App new"/></a>
-            <div className="card-body">
-              <h4 className="card-title"><a href="chitiet.html">Tin tuc so 3</a></h4>
-              <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aperiam incidunt dolorum blanditiis quidem enim autem, cum consectetur aut animi consequatur ad natus minima suscipit illo in, quo exercitationem dolores!</p>
-            </div>
-          </div>
-        </div>
-        <hr />
-      </div>
-      <div className="col-4">
-        <div className="card-deck">
-          <div className="card">
-            <a href="chitiet.html"><img className="card-img-top" src="http://placehold.it/800x400" alt="App new"/></a>
-            <div className="card-body">
-              <h4 className="card-title"><a href="chitiet.html">Tin tuc so 4</a></h4>
-              <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aperiam incidunt dolorum blanditiis quidem enim autem, cum consectetur aut animi consequatur ad natus minima suscipit illo in, quo exercitationem dolores!</p>
-            </div>
-          </div>
-        </div>
-        <hr />
-      </div>
-      <div className="col-4">
-        <div className="card-deck">
-          <div className="card">
-            <a href="chitiet.html"><img className="card-img-top" src="http://placehold.it/800x400" alt="App new"/></a>
-            <div className="card-body">
-              <h4 className="card-title"><a href="chitiet.html">Tin tuc so 5</a></h4>
-              <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aperiam incidunt dolorum blanditiis quidem enim autem, cum consectetur aut animi consequatur ad natus minima suscipit illo in, quo exercitationem dolores!</p>
-            </div>
-          </div>
-        </div>
-        <hr />
-      </div>
-      <div className="col-4">
-        <div className="card-deck">
-          <div className="card">
-            <a href="chitiet.html"><img className="card-img-top" src="http://placehold.it/800x400" alt="App new"/></a>
-            <div className="card-body">
-              <h4 className="card-title"><a href="chitiet.html">Tin tuc so 6</a></h4>
-              <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aperiam incidunt dolorum blanditiis quidem enim autem, cum consectetur aut animi consequatur ad natus minima suscipit illo in, quo exercitationem dolores!</p>
-            </div>
-          </div>
-        </div>
-        <hr />
-      </div>
+      <NewsItem anh="http://sohanews.sohacdn.com/thumb_w/660/2019/6/23/5l3a9734-1561292154089625406184-crop-15612921682321301182496.jpg" tieuDe="Đầu Tuần Rạng Rỡ" noiDung="Sau tất cả, đừng biến tình yêu với HLV Park Hang-seo thành sự hằn thù.Vừa qua, doanh nhân Việt được đích thân bầu Đức tiến cử vào ghế Phó chủ tịch phụ trách tài chính và vận động tài trợ của VFF - ông Nguyễn Hoài Nam, cũng dính thông tin nợ lương đội bóng mà ông là chủ tịch - FK Sarajevo, khiến các cầu thủ đình công, không chịu tham gia trận đấu sơ loại Champions League với Celtic. Bản thân doanh nhân này cũng xác nhận thông tin này là có thật."></NewsItem>
+      <NewsItem anh="http://sohanews.sohacdn.com/thumb_w/660/2019/6/23/5l3a9734-1561292154089625406184-crop-15612921682321301182496.jpg" tieuDe="Đầu Tuần Rạng Rỡ" noiDung="Sau tất cả, đừng biến tình yêu với HLV Park Hang-seo thành sự hằn thù.Vừa qua, doanh nhân Việt được đích thân bầu Đức tiến cử vào ghế Phó chủ tịch phụ trách tài chính và vận động tài trợ của VFF - ông Nguyễn Hoài Nam, cũng dính thông tin nợ lương đội bóng mà ông là chủ tịch - FK Sarajevo, khiến các cầu thủ đình công, không chịu tham gia trận đấu sơ loại Champions League với Celtic. Bản thân doanh nhân này cũng xác nhận thông tin này là có thật."></NewsItem>
+      <NewsItem anh="http://sohanews.sohacdn.com/thumb_w/660/2019/6/23/5l3a9734-1561292154089625406184-crop-15612921682321301182496.jpg" tieuDe="Đầu Tuần Rạng Rỡ" noiDung="Sau tất cả, đừng biến tình yêu với HLV Park Hang-seo thành sự hằn thù.Vừa qua, doanh nhân Việt được đích thân bầu Đức tiến cử vào ghế Phó chủ tịch phụ trách tài chính và vận động tài trợ của VFF - ông Nguyễn Hoài Nam, cũng dính thông tin nợ lương đội bóng mà ông là chủ tịch - FK Sarajevo, khiến các cầu thủ đình công, không chịu tham gia trận đấu sơ loại Champions League với Celtic. Bản thân doanh nhân này cũng xác nhận thông tin này là có thật."></NewsItem>
+      <NewsItem anh="http://sohanews.sohacdn.com/thumb_w/660/2019/6/23/5l3a9734-1561292154089625406184-crop-15612921682321301182496.jpg" tieuDe="Đầu Tuần Rạng Rỡ" noiDung="Sau tất cả, đừng biến tình yêu với HLV Park Hang-seo thành sự hằn thù.Vừa qua, doanh nhân Việt được đích thân bầu Đức tiến cử vào ghế Phó chủ tịch phụ trách tài chính và vận động tài trợ của VFF - ông Nguyễn Hoài Nam, cũng dính thông tin nợ lương đội bóng mà ông là chủ tịch - FK Sarajevo, khiến các cầu thủ đình công, không chịu tham gia trận đấu sơ loại Champions League với Celtic. Bản thân doanh nhân này cũng xác nhận thông tin này là có thật."></NewsItem>    
     </div>
   </div>
   {/* end tintuc */}
