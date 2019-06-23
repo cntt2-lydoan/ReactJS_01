@@ -6,7 +6,7 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <div>
+                
   <header className="masthead">
     <div className="container h-100">
       <div className="row h-100">
@@ -22,7 +22,7 @@ class Home extends Component {
               <div className="device">
                 <div className="screen">
                   {/* Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! */}
-                  <img src="https://blackrockdigital.github.io/startbootstrap-new-age/img/demo-screen-1.jpg" className="img-fluid" alt="Image"/>
+                  <img src="https://blackrockdigital.github.io/startbootstrap-new-age/img/demo-screen-1.jpg" className="img-fluid" alt="App for iphone"/>
                 </div>
                 <div className="button">
                   {/* You can hook the "home button" to some JavaScript events or just remove it */}
@@ -41,14 +41,14 @@ class Home extends Component {
           <h2 className="section-heading">Discover what all the buzz is about!</h2>
           <p>Our app is available on any mobile device! Download now to get started!</p>
           <div className="badges">
-            <a className="badge-link" href="/"><img src="https://blackrockdigital.github.io/startbootstrap-new-age/img/google-play-badge.svg" alt="Image"/></a>
-            <a className="badge-link" href="/"><img src="https://blackrockdigital.github.io/startbootstrap-new-age/img/app-store-badge.svg" alt="Image"/></a>
+            <a className="badge-link" href="/"><img src="https://blackrockdigital.github.io/startbootstrap-new-age/img/google-play-badge.svg" alt="App"/></a>
+            <a className="badge-link" href="/"><img src="https://blackrockdigital.github.io/startbootstrap-new-age/img/app-store-badge.svg" alt="App"/></a>
           </div>
         </div>
       </div>
     </div>
   </section>
-</div>
+
 
             </div>
         );
