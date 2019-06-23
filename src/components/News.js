@@ -3,7 +3,7 @@ import NewsItem from './NewsItem';
 import dl from './dulieu.json';
 class News extends Component {
     render() {
-      console.log(dl);
+     
         return (
             <div>
                 <div>
@@ -22,10 +22,19 @@ class News extends Component {
   {/* begin tintuc */}
   <div className="container">
     <div className="row mt-3">
-      <NewsItem anh="http://sohanews.sohacdn.com/thumb_w/660/2019/6/23/5l3a9734-1561292154089625406184-crop-15612921682321301182496.jpg" tieuDe="Đầu Tuần Rạng Rỡ" noiDung="Sau tất cả, đừng biến tình yêu với HLV Park Hang-seo thành sự hằn thù.Vừa qua, doanh nhân Việt được đích thân bầu Đức tiến cử vào ghế Phó chủ tịch phụ trách tài chính và vận động tài trợ của VFF - ông Nguyễn Hoài Nam, cũng dính thông tin nợ lương đội bóng mà ông là chủ tịch - FK Sarajevo, khiến các cầu thủ đình công, không chịu tham gia trận đấu sơ loại Champions League với Celtic. Bản thân doanh nhân này cũng xác nhận thông tin này là có thật."></NewsItem>
-      <NewsItem anh="http://sohanews.sohacdn.com/thumb_w/660/2019/6/23/5l3a9734-1561292154089625406184-crop-15612921682321301182496.jpg" tieuDe="Đầu Tuần Rạng Rỡ" noiDung="Sau tất cả, đừng biến tình yêu với HLV Park Hang-seo thành sự hằn thù.Vừa qua, doanh nhân Việt được đích thân bầu Đức tiến cử vào ghế Phó chủ tịch phụ trách tài chính và vận động tài trợ của VFF - ông Nguyễn Hoài Nam, cũng dính thông tin nợ lương đội bóng mà ông là chủ tịch - FK Sarajevo, khiến các cầu thủ đình công, không chịu tham gia trận đấu sơ loại Champions League với Celtic. Bản thân doanh nhân này cũng xác nhận thông tin này là có thật."></NewsItem>
-      <NewsItem anh="http://sohanews.sohacdn.com/thumb_w/660/2019/6/23/5l3a9734-1561292154089625406184-crop-15612921682321301182496.jpg" tieuDe="Đầu Tuần Rạng Rỡ" noiDung="Sau tất cả, đừng biến tình yêu với HLV Park Hang-seo thành sự hằn thù.Vừa qua, doanh nhân Việt được đích thân bầu Đức tiến cử vào ghế Phó chủ tịch phụ trách tài chính và vận động tài trợ của VFF - ông Nguyễn Hoài Nam, cũng dính thông tin nợ lương đội bóng mà ông là chủ tịch - FK Sarajevo, khiến các cầu thủ đình công, không chịu tham gia trận đấu sơ loại Champions League với Celtic. Bản thân doanh nhân này cũng xác nhận thông tin này là có thật."></NewsItem>
-      <NewsItem anh="http://sohanews.sohacdn.com/thumb_w/660/2019/6/23/5l3a9734-1561292154089625406184-crop-15612921682321301182496.jpg" tieuDe="Đầu Tuần Rạng Rỡ" noiDung="Sau tất cả, đừng biến tình yêu với HLV Park Hang-seo thành sự hằn thù.Vừa qua, doanh nhân Việt được đích thân bầu Đức tiến cử vào ghế Phó chủ tịch phụ trách tài chính và vận động tài trợ của VFF - ông Nguyễn Hoài Nam, cũng dính thông tin nợ lương đội bóng mà ông là chủ tịch - FK Sarajevo, khiến các cầu thủ đình công, không chịu tham gia trận đấu sơ loại Champions League với Celtic. Bản thân doanh nhân này cũng xác nhận thông tin này là có thật."></NewsItem>    
+      {
+
+            dl.map((value,key) => {
+              return(
+                <NewsItem key={key}
+                tinId={value.id}
+                anh={value.anh}
+                tieuDe={value.tieuDe}
+                trichDan={value.trichDan} ></NewsItem>
+              )
+            })
+
+      }   
     </div>
   </div>
   {/* end tintuc */}
