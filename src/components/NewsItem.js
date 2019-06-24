@@ -40,7 +40,7 @@ class NewsItem extends Component {
                 <div className="col-4">
                     <div className="card-deck">
                     <div className="card">
-                        <a href={"/tin-tuc/"+this.chuyenDoiURL(this.props.tieuDe)+"-"+this.props.tinId+".html"}><img className="card-img-top" src={this.props.anh} alt="App new"/></a>
+                        <a href={"/tin-tuc/"+this.chuyenDoiURL(this.props.tieuDe)+"."+this.props.tinId+".html"}><img className="card-img-top" src={this.props.anh} alt="App new"/></a>
                         <div className="card-body">
                         <h4 className="card-title"><a href="/tin-chi-tiet">{this.props.tieuDe}</a></h4>
                         <p className="card-text">{this.props.trichDan}</p>
