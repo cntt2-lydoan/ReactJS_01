@@ -5,6 +5,7 @@ class NewsDetail extends Component {
     render() {
       // console.log(this.props.match.params.id);
       // console.log(typeof(this.props.match.params.id));
+      
       var dem=1;
         return (
             <div>
@@ -24,7 +25,7 @@ class NewsDetail extends Component {
   {/* begin tintuc */}
   {
   dl.map((value,key) => {
-        if(value.id ==  this.props.match.params.id){
+        if(value.id === parseInt(this.props.match.params.id,20) ){
           return(
             <div className="jumbotron jumbotron-fluid" key={key}>
             <div className="container">
@@ -39,6 +40,7 @@ class NewsDetail extends Component {
           </div>
           )
         }
+        else{return 0 ;}
       })
     }
   <div className="container">                        
@@ -48,8 +50,8 @@ class NewsDetail extends Component {
         <div className="card-deck">
           {
             dl.map((value,key)=>{
-              console.log(key);
-              if(value.id != this.props.match.params.id){
+              // console.log(key);
+              if(value.id !== parseInt(this.props.match.params.id,20)){
                 if(dem<=4){       
                   dem++;   
                   return(
@@ -62,7 +64,7 @@ class NewsDetail extends Component {
                  )
                  }
               }
-              
+             return true;
             })
           }
         </div>

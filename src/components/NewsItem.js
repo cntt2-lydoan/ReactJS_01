@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import { Link} from 'react-router-dom';
 
 class NewsItem extends Component {
-    constructor(props) {
-        super(props);
-        
-    }
     chuyenDoiURL = (str) => {
         
         str = str.toLowerCase();     
