@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import dl from './dulieu.json';
+import NewsRelated from './NewsRelated.js';
 class NewsDetail extends Component {
     render() {
-      console.log(this.props.match.params.id);
-      console.log(typeof(this.props.match.params.id));
-      
+      // console.log(this.props.match.params.id);
+      // console.log(typeof(this.props.match.params.id));
+      var dem=1;
         return (
             <div>
                 <div>
@@ -25,7 +26,7 @@ class NewsDetail extends Component {
   dl.map((value,key) => {
         if(value.id ==  this.props.match.params.id){
           return(
-            <div className="jumbotron jumbotron-fluid">
+            <div className="jumbotron jumbotron-fluid" key={key}>
             <div className="container">
               <img src={value.anh} className="img-fluid rong100 " alt="App NewsDetail " />
               <h3 className="lead text-center">{value.tieuDe}</h3>
@@ -45,34 +46,25 @@ class NewsDetail extends Component {
     <div className="row">
       <div className="col-12">
         <div className="card-deck">
-          <div className="card">
-            <a href="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/500x300" alt="" /></a>
-            <div className="card-body">
-              <h4 className="card-title">Title</h4>
-              <p className="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos nobis rerum sint laborum natus maxime laboriosam reprehenderit quis reiciendis ipsa nam recusandae, assumenda quibusdam officiis ea quam facilis, molestiae fugiat.</p>
-            </div>
-          </div>
-          <div className="card">
-            <a href="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/500x300" alt=" App NewsDetail" /></a>
-            <div className="card-body">
-              <h4 className="card-title">Title</h4>
-              <p className="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos nobis rerum sint laborum natus maxime laboriosam reprehenderit quis reiciendis ipsa nam recusandae, assumenda quibusdam officiis ea quam facilis, molestiae fugiat.</p>
-            </div>
-          </div>
-          <div className="card">
-            <a href="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/500x300" alt="App NewsDetail" /></a>
-            <div className="card-body">
-              <h4 className="card-title">Title</h4>
-              <p className="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos nobis rerum sint laborum natus maxime laboriosam reprehenderit quis reiciendis ipsa nam recusandae, assumenda quibusdam officiis ea quam facilis, molestiae fugiat.</p>
-            </div>
-          </div>
-          <div className="card">
-            <a href="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/500x300" alt="App NewsDetail" /></a>
-            <div className="card-body">
-              <h4 className="card-title">Title</h4>
-              <p className="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos nobis rerum sint laborum natus maxime laboriosam reprehenderit quis reiciendis ipsa nam recusandae, assumenda quibusdam officiis ea quam facilis, molestiae fugiat.</p>
-            </div>
-          </div>
+          {
+            dl.map((value,key)=>{
+              console.log(key);
+              if(value.id != this.props.match.params.id){
+                if(dem<=4){       
+                  dem++;   
+                  return(
+                   <NewsRelated key={key}
+                   tinId={value.id}
+                   anh={value.anh}
+                   tieuDe={value.tieuDe}
+                   trichDan={value.trichDan}>
+                   </NewsRelated>
+                 )
+                 }
+              }
+              
+            })
+          }
         </div>
       </div>
     </div>

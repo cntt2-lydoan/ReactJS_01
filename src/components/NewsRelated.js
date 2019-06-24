@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import { Link} from 'react-router-dom';
-
-class NewsItem extends Component {
-    constructor(props) {
-        super(props);
-        
-    }
+class NewsRelated extends Component {
     chuyenDoiURL = (str) => {
         
         str = str.toLowerCase();     
@@ -34,25 +29,20 @@ class NewsItem extends Component {
         // return
         return str;
     }
-
-    
     render() {
         return (
-                <div className="col-4">
-                    <div className="card-deck">
-                    <div className="card">
-                        <Link to={"/tin-tuc/"+this.chuyenDoiURL(this.props.tieuDe)+"."+this.props.tinId+".html"}><img className="card-img-top" src={this.props.anh} alt="App new"/></Link>
-                        <div className="card-body">
-                        <h4 className="card-title"><a href="/tin-chi-tiet">{this.props.tieuDe}</a></h4>
-                        <p className="card-text">{this.props.trichDan}</p>
-                        </div>
-                    </div>
-                    </div>
-                    <hr />
+            <div className="card">
+                <Link to={"/tin-tuc/"+this.chuyenDoiURL(this.props.tieuDe)+"."+this.props.tinId+".html"}>
+                <img className={this.props.anh} src={this.props.anh} alt="chi tiet" /></Link>
+                <div className="card-body">
+                    <h4 className="card-title">{this.props.tieuDe}</h4>
+                    <p className="card-text">{this.props.trichDan}</p>
                 </div>
+                <hr/>
+            </div>
 
         );
     }
 }
 
-export default NewsItem;
+export default NewsRelated;
